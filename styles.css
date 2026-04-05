@@ -479,6 +479,7 @@ section { padding: 120px 60px; }
 .badge-fin { color: var(--accent3); border-color: var(--accent3); }
 .badge-reg { color: var(--accent2); border-color: var(--accent2); }
 .badge-col { color: #ffd166; border-color: #ffd166; }
+.badge-sync { color: #38bdf8; border-color: #38bdf8; }
 .project-desc {
   font-size:14px; line-height:1.75; color: var(--muted);
   max-width:680px; font-weight:300;
@@ -705,8 +706,17 @@ section { padding: 120px 60px; }
 @media(max-width:640px){
   .hero-name { font-size: clamp(58px, 20vw, 96px); }
   .hero-desc { margin-top:12px; font-size:14px; line-height:1.45; }
-  .hero-actions { margin-top:16px; gap:14px; flex-wrap:wrap; }
-  .btn-primary { padding: 14px 24px; }
+  .hero-actions { 
+    margin-top:24px; 
+    gap:16px; 
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-primary { 
+    width: 100%; 
+    justify-content: center;
+    padding: 14px 24px; 
+  }
   .section-title { font-size: clamp(44px, 16vw, 84px); }
   .project-card-inner { padding:22px 18px; }
   .project-tech { gap:6px; }
